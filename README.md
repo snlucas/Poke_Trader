@@ -1,5 +1,6 @@
 # Poke_Trader
  Calculadora para troca de Pokémons.
+ Para realizar uma troca, é levado em consideração um número máximo de Pokémons (6 por padrão).
 
 
 ## Status
