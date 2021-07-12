@@ -17,6 +17,12 @@
 - [Deploy](https://flask-poke-trader.herokuapp.com/)
 - <em>Usando Python:</em>
   - $ pip install -r requirements.txt
-  - $ export FLASK_APP=app.py
-  - $ export FLASK_ENV=development
   - $ flask run
+    -  Se necessário:
+      - Linux (Unix): 
+      - $ export FLASK_APP=app.py
+      - $ export FLASK_ENV=development 
+      
+      - Windows:
+      - $ set FLASK_APP=app.py
+      - $ set FLASK_ENV=development
