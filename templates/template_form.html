@@ -1,0 +1,22 @@
+{% extends "template_base.html" %}
+{% from "macros.html" import form_choose_pokemon with context %}
+
+{% block content %}
+<form action="{{url_for('index')}}" method="POST">
+    <div class="row justify-content-around">
+        <div class="col-sm-4 mt-5 p-3 border">
+            <h2>Player 1</h2>
+            {{ form_choose_pokemon(1) }}
+        </div>
+        <div class="col-sm-4 mt-5 p-3 border">
+            <h2>Player 2</h2>
+            {{ form_choose_pokemon(2) }}
+        </div>
+    </div>
+
+    <div class="text-center  my-5">
+    <button type="submit" class="btn btn-primary">Trocar</button>
+
+    </div>
+</form>
+{% endblock %}

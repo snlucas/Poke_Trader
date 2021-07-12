@@ -1,0 +1,13 @@
+{% macro form_choose_pokemon(player_num) %}
+<div class="form-group">
+    {% for i in range(1, 7) %}
+        <label for="formControlSelect">Pokemon {{i}}</label>
+            <select class="form-control" name="player{{player_num}}Select{{i}}" id="formControlSelect">
+                <option selected="selected"></option>
+                {% for pokemon in pokemon_list %}
+                <option>{{ pokemon }}</option>
+                {% endfor %}
+            </select>
+    {% endfor %}
+</div>
+{% endmacro %}
