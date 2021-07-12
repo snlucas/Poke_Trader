@@ -1,9 +1,10 @@
 import pokebase
 import flask
-
+from flask_sqlalchemy import SQLAlchemy
 
 app = flask.Flask(__name__, static_url_path='', static_folder='frontend/build')
 app.config.from_object('config.ProdConfig')
+db = SQLAlchemy(app)
 
 
 @app.route('/', methods=['GET', 'POST'])
