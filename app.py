@@ -3,7 +3,7 @@ import flask
 
 
 app = flask.Flask(__name__, static_url_path='', static_folder='frontend/build')
-app.config.from_object('config.DevConfig')
+app.config.from_object('config.ProdConfig')
 
 
 @app.route('/', methods=['GET', 'POST'])
